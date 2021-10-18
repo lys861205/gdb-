@@ -11,4 +11,16 @@
 * bt 显示调用栈
 * frame 选择栈帧
 ## 断点相关命令
-* 
+### 命名空间设置断点
+‘’‘
+namespace {
+void foo(){}
+}
+
+namespace Foo {
+void bar(){}
+}
+
+匿名空间设置断点 b ::foo
+有名空间设置断点 b Foo::bar
+’‘’
