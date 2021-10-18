@@ -34,3 +34,8 @@ b void test(int a, int b)
 ```
 b File.cpp:10
 ```
+* 程序地址设置断点
+```
+info symbol 
+b address
+```
